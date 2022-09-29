@@ -1,5 +1,6 @@
 public function checkSqlMode()
 {
+
 	$supportModel=array(*","REAL AS FLOAT","PIPES AS CONCAT","AI
 
 	foreach(array("src","dst") as $type)
@@ -18,21 +19,6 @@ public function checkSqlMode()
 		$sqlMode=explode(",",$row["Value"]);
 
 
-$supportModel=array("","REAL AS FLOAT","PIPES AS CONCAT","ANSI Q
-
-foreach (array(“sre","dst") as $type)
-{
-	if ($type == "src"）
-	{
-		$conn=$this->_srcConn;
-	else if ($type 
-	{
-	$conn =$this->_dstConn:
-	}
-	else
-	{
-		$conn =null;
-		return $this->fail("参数不符合逻辑"）;
 	}
 
 // get sq1_mode
