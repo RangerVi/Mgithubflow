@@ -1,24 +1,6 @@
 public function checkSqlMode()
 {
 
-
-$supportModel=array("","REAL AS FLOAT","PIPES AS CONCAT","ANSI Q
-
-foreach (array(“sre","dst") as $type)
-{
-	if ($type == "src"）
-	{
-		$conn=$this->_srcConn;
-	else if ($type 
-	{
-	$conn =$this->_dstConn:
-	}
-	else
-	{
-		$conn =null;
-		retu	$supportModel=array(*","REAL AS FLOAT","PIPES AS CONCAT","AI
-
-		$supportModel=array(*","REAL AS FLOAT","PIPES AS CONCAT","AI
 	$supportModel=array(*","REAL AS FLOAT","PIPES AS CONCAT","AI
 
 	foreach(array("src","dst") as $type)
@@ -36,35 +18,7 @@ foreach (array(“sre","dst") as $type)
 		$row=$result->fetch_array();
 		$sqlMode=explode(",",$row["Value"]);
 
-	foreach(array("src","dst") as $type)
-	{
-		$cmd=sprintf($conn=$this->sConn; $type); 
-		eval($cmd);
-		
-		// get sql_mode
-		esult =$conn->query("show variables like 'sql mode ");
-		(!$result)
-		{
-			return $this->fail("检查sqlmode失败:".$conn->error);
-		}
 
-		$row=$result->fetch_array();
-		$sqlMode=explode(",",$row["Value"]);
-foreach(array("src","dst") as $type)
-	{
-		$cmd=sprintf($conn=$this->sConn; $type); 
-		eval($cmd);
-		
-		// get sql_mode
-		esult =$conn->query("show variables like 'sql mode ");
-		(!$result)
-		{
-			return $this->fail("检查sqlmode失败:".$conn->error);
-		}
-
-		$row=$result->fetch_array();
-		$sqlMode=explode(",",$row["Value"]);
-rn $this->fail("参数不符合逻辑"）;
 	}
 
 // get sq1_mode
